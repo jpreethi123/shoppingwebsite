@@ -1,0 +1,436 @@
+<%- include("header") -%>
+<script>
+    
+//$('.carousel').on('mouseleave',function(){ $(this).carousel('pause'); });
+/*("img").click(function(){
+    $("#carouselExampleSlidesOnly").carousel("cycle");
+});*/
+$(document).ready(function(){
+    // Activate the Carousel, but pause it from the start
+    $(".k1").carousel("pause");
+          
+    // Click on the button to start sliding 
+    $(".k1").mouseenter(function(){
+      $(".k1").carousel("cycle");
+    });
+  
+    // Click on the button to stop sliding 
+    $(".k1").mouseleave(function(){
+        $("img").html(`<img src="/images/x1.webp">`);
+      $(".k1").carousel("pause");
+     
+    });
+    // $(".carousel").carousel("pause");
+    // $(".carousel").mouseenter(function(){
+    //     $("#id1").html(`<button type=button style="background-color:deeppink;color:white;width:180px;height:40px">Add Whislist</button><br><br><p>Sizes:XS,S,M,L,XL,XXL`);
+
+    //   });
+    $(".k2").carousel("pause");
+          
+          
+          $(".k2").mouseenter(function(){
+            $(".k2").carousel("cycle");
+          });
+        
+          
+          $(".k2").mouseleave(function(){
+            $(".k2").carousel("pause");
+            $("img").html(`<img src="x1.webp">`);
+          });
+        //-----------------------------------
+
+          $(".k3").carousel("pause");
+          
+          
+          $(".k3").mouseenter(function(){
+            $(".k3").carousel("cycle");
+          });
+        
+          
+          $(".k3").mouseleave(function(){
+            $(".k3").carousel("pause");
+            $("img").html(`<img src="x1.webp">`);
+          });
+           //-----------------------------------
+
+          $(".k4").carousel("pause");
+          
+          
+          $(".k4").mouseenter(function(){
+            $(".k4").carousel("cycle");
+          });
+        
+          
+          $(".k4").mouseleave(function(){
+            $(".k4").carousel("pause");
+            $("img").html(`<img src="x1.webp">`);
+          });
+
+          //-------
+          $(".k5").carousel("pause");
+          
+          
+          $(".k5").mouseenter(function(){
+            $(".k5").carousel("cycle");
+          });
+        
+          
+          $(".k5").mouseleave(function(){
+            $(".k5").carousel("pause");
+            $("img").html(`<img src="x1.webp">`);
+          });
+
+          //---------
+          $(".k6").carousel("pause");
+          
+          
+          $(".k6").mouseenter(function(){
+            $(".k6").carousel("cycle");
+          });
+        
+          
+          $(".k6").mouseleave(function(){
+            $(".k6").carousel("pause");
+            $("img").html(`<img src="x1.webp">`);
+          });
+          //-----
+          $(".k7").carousel("pause");
+          
+          
+          $(".k7").mouseenter(function(){
+            $(".k7").carousel("cycle");
+          });
+        
+          
+          $(".k7").mouseleave(function(){
+            $(".k7").carousel("pause");
+            $("img").html(`<img src="x1.webp">`);
+          });
+//-----
+$(".k8").carousel("pause");
+          
+          
+          $(".k8").mouseenter(function(){
+            $(".k8").carousel("cycle");
+          });
+        
+          
+          $(".k8").mouseleave(function(){
+            $(".k8").carousel("pause");
+            $("img").html(`<img src="x1.webp">`);
+          });
+      
+
+  });
+</script>
+
+<div class="row m-5">
+    <div class="col-sm-3">
+        <div class="card" style="width:230px; height:430px;">
+            <div id="myCarousel" class="carousel slide k1" data-interval="1500">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                  </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="card-img-top" src="/images/aa1.webp" alt="img1" style="height: 260px;">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="card-img-top" src="/images/aa2.webp" alt="img1" style="height: 260px;">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="card-img-top" src="/images/aa3.webp" alt="img1" style="height: 260px;" >
+                    </div>
+                  </div>
+            </div>
+            <div class="card-body c1">
+              <p class="card-text " id="demo" style="font-size: 13px;"><b>Tokyo Talkies</b>
+               </p>
+               <p>Sizes:XS,S,M,L,XL,XXL
+                <b class="m-0" style="font-size: 15px;">Rs.924 <span style ="opacity: 0.5; text-decoration: line-through; font-size: 12px;">Rs.1849</span><span style="color:palevioletred;font-size: 12px;">(50% OFF)</span></b>
+                <form action="/" method="POST">
+                    <input type="hidden" name="cart1" value="9">
+                    <input type="hidden" name="cart2" value="Tokyo Talkies">
+                    <input type="hidden" name="cart3" value="924">
+                    <input type="hidden" name="cart4" value="1849">
+                    <input type="hidden" name="cart5" value="50"> 
+                    <input type="hidden" name="cart6" value="/images/aa1.webp">
+                    <button class="mb-2" type="submit" style="background-color:deeppink;color:white;width:180px;height:40px">Add Whislist</button>
+                    </form>
+            </div>
+          </div>
+    </div>
+
+    <div class="col-sm-3">
+        <div class="card" style="width:230px; height:430px;">
+            <div id="myCarousel" class="carousel slide k2" data-interval="1500">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                  </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="card-img-top" src="/images/bb1.webp" alt="img1" style="height: 260px;">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="card-img-top" src="/images/bb2.webp" alt="img1" style="height: 260px;">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="card-img-top" src="/images/bb3.webp" alt="img1" style="height: 260px;" >
+                    </div>
+                  </div>
+            </div>
+            <div class="card-body c1">
+              <p class="card-text " id="demo" style="font-size: 13px;"><b>U And F</b>
+               </p>
+                <p>Sizes:XS,S,M,L,XL,XXL
+                <b class="m-0" style="font-size: 15px;">Rs.679 <span style ="opacity: 0.5; text-decoration: line-through; font-size: 12px;">Rs.1699</span><span style="color:palevioletred;font-size: 12px;">(60% OFF)</span></b>
+                <form action="/" method="POST">
+                    <input type="hidden" name="cart1" value="10">
+                    <input type="hidden" name="cart2" value="U and F">
+                    <input type="hidden" name="cart3" value="679">
+                    <input type="hidden" name="cart4" value="1699">
+                    <input type="hidden" name="cart5" value="60"> 
+                    <input type="hidden" name="cart6" value="/images/bb1.webp">
+                    <button class="mb-2" type="submit" style="background-color:deeppink;color:white;width:180px;height:40px">Add Whislist</button>
+                    </form>
+            </div>
+          </div>
+    </div>
+
+    <div class="col-sm-3">
+        <div class="card" style="width:230px; height:430px;">
+            <div id="myCarousel" class="carousel slide k3" data-interval="1500">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                  </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="card-img-top" src="/images/cc1.webp" alt="img1" style="height: 260px;">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="card-img-top" src="/images/cc2.webp" alt="img1" style="height: 260px;">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="card-img-top" src="/images/cc3.webp" alt="img1" style="height: 260px;" >
+                    </div>
+                  </div>
+            </div>
+            <div class="card-body c1">
+              <p class="card-text " id="demo" style="font-size: 13px;"><b>RARE</b>
+               </p>
+               <p>Sizes:XS,S,M,L,XL,XXL
+                <b class="m-0" style="font-size: 15px;">Rs.944 <span style ="opacity: 0.5; text-decoration: line-through; font-size: 12px;">Rs.2099</span><span style="color:palevioletred;font-size: 12px;">(55% OFF)</span></b>
+                <form action="/" method="POST">
+                    <input type="hidden" name="cart1" value="11">
+                    <input type="hidden" name="cart2" value="RARE">
+                    <input type="hidden" name="cart3" value="944">
+                    <input type="hidden" name="cart4" value="2099">
+                    <input type="hidden" name="cart5" value="55"> 
+                    <input type="hidden" name="cart6" value="/images/cc1.webp">
+                    <button class="mb-2" type="submit" style="background-color:deeppink;color:white;width:180px;height:40px">Add Whislist</button>
+                    </form>
+            </div>
+          </div>
+    </div>
+
+    <div class="col-sm-3">
+        <div class="card" style="width:230px; height:430px;">
+            <div id="myCarousel" class="carousel slide k4" data-interval="1500">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                  </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="card-img-top" src="/images/dd1.webp" alt="img1" style="height: 260px;">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="card-img-top" src="/images/dd2.webp" alt="img1" style="height: 260px;">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="card-img-top" src="/images/dd3.webp" alt="img1" style="height: 260px;" >
+                    </div>
+                  </div>
+            </div>
+            <div class="card-body c1">
+              <p class="card-text " id="demo" style="font-size: 13px;"><b>Floral Belted Dress</b>
+               </p>
+               <p>Sizes:XS,S,M,L,XL,XXL
+                <b class="m-0" style="font-size: 15px;">Rs.1236 <span style ="opacity: 0.5; text-decoration: line-through; font-size: 12px;">Rs.2249</span><span style="color:palevioletred;font-size: 12px;">(45% OFF)</span></b>
+                <form action="/" method="POST">
+                    <input type="hidden" name="cart1" value="12">
+                    <input type="hidden" name="cart2" value="Floral Belted Dress">
+                    <input type="hidden" name="cart3" value="1236">
+                    <input type="hidden" name="cart4" value="1249">
+                    <input type="hidden" name="cart5" value="45"> 
+                    <input type="hidden" name="cart6" value="/images/dd1.webp">
+                    <button class="mb-2" type="submit" style="background-color:deeppink;color:white;width:180px;height:40px">Add Whislist</button>
+                    </form>
+            </div>
+          </div>
+    </div>
+    </div>
+
+    <div class="row m-5">
+        <div class="col-sm-3">
+            <div class="card" style="width:230px; height:430px;">
+                <div id="myCarousel" class="carousel slide k5" data-interval="1500">
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                      </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img class="card-img-top" src="/images/ee1.webp" alt="img1" style="height: 260px;">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="card-img-top" src="/images/ee2.webp" alt="img1" style="height: 260px;">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="card-img-top" src="/images/ee3.webp" alt="img1" style="height: 260px;" >
+                        </div>
+                      </div>
+                </div>
+                <div class="card-body c1">
+                  <p class="card-text " id="demo" style="font-size: 13px;"><b>Maxi Belted Dress</b>
+                   </p>
+                  <p>Sizes:XS,S,M,L,XL,XXL
+                    <b class="m-0" style="font-size: 15px;">Rs.799 <span style ="opacity: 0.5; text-decoration: line-through; font-size: 12px;">Rs.1999</span><span style="color:palevioletred;font-size: 12px;">(60% OFF)</span></b>
+                    <form action="/" method="POST">
+                        <input type="hidden" name="cart1" value="13">
+                        <input type="hidden" name="cart2" value="Maxi Belted Dress">
+                        <input type="hidden" name="cart3" value="799">
+                        <input type="hidden" name="cart4" value="1999">
+                        <input type="hidden" name="cart5" value="60"> 
+                        <input type="hidden" name="cart6" value="/images/ee1.webp">
+                        <button class="mb-2" type="submit" style="background-color:deeppink;color:white;width:180px;height:40px">Add Whislist</button>
+                        </form>
+                </div>
+              </div>
+        </div>
+    
+        <div class="col-sm-3">
+            <div class="card" style="width:230px; height:430px;">
+                <div id="myCarousel" class="carousel slide k6" data-interval="1500">
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                      </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img class="card-img-top" src="/images/ff1.webp" alt="img1" style="height: 260px;">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="card-img-top" src="/images/ff2.webp" alt="img1" style="height: 260px;">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="card-img-top" src="/images/ff3.webp" alt="img1" style="height: 260px;" >
+                        </div>
+                      </div>
+                </div>
+                <div class="card-body c1">
+                  <p class="card-text " id="demo" style="font-size: 13px;"><b>Boho Printed Dress</b>
+                   </p>
+                    <p>Sizes:XS,S,M,L,XL,XXL
+                    <b class="m-0" style="font-size: 15px;">Rs.724 <span style ="opacity: 0.5; text-decoration: line-through; font-size: 12px;">Rs.1449</span><span style="color:palevioletred;font-size: 12px;">(50% OFF)</span></b>
+                    <form action="/" method="POST">
+                        <input type="hidden" name="cart1" value="14">
+                        <input type="hidden" name="cart2" value="Boho Printed Dress">
+                        <input type="hidden" name="cart3" value="724">
+                        <input type="hidden" name="cart4" value="1449">
+                        <input type="hidden" name="cart5" value="50"> 
+                        <input type="hidden" name="cart6" value="/images/ff1.webp">
+                        <button class="mb-2" type="submit" style="background-color:deeppink;color:white;width:180px;height:40px">Add Whislist</button>
+                        </form>
+                </div>
+              </div>
+        </div>
+    
+        <div class="col-sm-3">
+            <div class="card" style="width:230px; height:430px;">
+                <div id="myCarousel" class="carousel slide k7" data-interval="1500">
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                      </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img class="card-img-top" src="/images/gg1.webp" alt="img1" style="height: 260px;">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="card-img-top" src="/images/gg2.webp" alt="img1" style="height: 260px;">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="card-img-top" src="/images/gg3.webp" alt="img1" style="height: 260px;" >
+                        </div>
+                      </div>
+                </div>
+                <div class="card-body c1">
+                  <p class="card-text " id="demo" style="font-size: 13px;"><b>Tokyo Printed Dress</b>
+                   </p>
+                  <p>Sizes:XS,S,M,L,XL,XXL
+                    <b class="m-0" style="font-size: 15px;">Rs.906 <span style ="opacity: 0.5; text-decoration: line-through; font-size: 12px;">Rs.2449</span><span style="color:palevioletred;font-size: 12px;">(63% OFF)</span></b>
+                    <form action="/" method="POST">
+                        <input type="hidden" name="cart1" value="15">
+                        <input type="hidden" name="cart2" value="Tokyo Printed Dress">
+                        <input type="hidden" name="cart3" value="906">
+                        <input type="hidden" name="cart4" value="2449">
+                        <input type="hidden" name="cart5" value="63"> 
+                        <input type="hidden" name="cart6" value="/images/gg1.webp">
+                        <button class="mb-2" type="submit" style="background-color:deeppink;color:white;width:180px;height:40px">Add Whislist</button>
+                        </form>
+                </div>
+              </div>
+        </div>
+    
+        <div class="col-sm-3">
+            <div class="card" style="width:230px; height:430px;">
+                <div id="myCarousel" class="carousel slide k8" data-interval="1500">
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                      </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img class="card-img-top" src="/images/hh1.webp" alt="img1" style="height: 260px;">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="card-img-top" src="/images/hh2.webp" alt="img1" style="height: 260px;">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="card-img-top" src="/images/hh3.webp" alt="img1" style="height: 260px;" >
+                        </div>
+                      </div>
+                </div>
+                <div class="card-body c1">
+                  <p class="card-text " id="demo" style="font-size: 13px;"><b>Check Shirt Dress</b>
+                   </p>
+                   <p>Sizes:XS,S,M,L,XL,XXL
+                    <b class="m-0" style="font-size: 15px;">Rs.998 <span style ="opacity: 0.5; text-decoration: line-through; font-size: 12px;">Rs.2699</span><span style="color:palevioletred;font-size: 12px;">(63% OFF)</span></b>
+                    <form action="/" method="POST">
+                        <input type="hidden" name="cart1" value="16">
+                        <input type="hidden" name="cart2" value="Check Shirt Dress">
+                        <input type="hidden" name="cart3" value="998">
+                        <input type="hidden" name="cart4" value="2699">
+                        <input type="hidden" name="cart5" value="63"> 
+                        <input type="hidden" name="cart6" value="/images/hh1.webp">
+                        <button class="mb-2" type="submit" style="background-color:deeppink;color:white;width:180px;height:40px">Add Whislist</button>
+                        </form>
+                </div>
+              </div>
+        </div>
+        </div>
+        <br><br><br><br>
+     
+<%- include("footer") -%>

@@ -1,0 +1,41 @@
+<html>
+<head>
+<link rel = "icon" href ="/images/fav.png"  type = "image/png" sizes="16x16" > 
+  <title>Online Shopping for Women,Men and Kids</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <style>
+      div{
+          max-width: 400px;
+          max-height: 600px;
+          margin: auto;
+          margin-top: 5%;
+          background-color: white;
+          padding: 3%;
+      }
+  </style>
+  </head>
+<body style="background-color: whitesmoke;">
+<div>
+    <h3>Enter Details to Place Order</h3>
+    <form action="/placeorder" method="POST">
+        <input type="text" placeholder="FirstName" name="fname">
+        <input type="text" placeholder="lastName" name="lname">
+        <input type="email" placeholder="Email" name="username">
+        <input type="text" placeholder="Phone Number" name="phn">
+        <textarea name="address" rows="5" cols="45">Address</textarea><br><br>
+        <button type="submit" class="btn btn-danger new">Proceed To Place</button><br><br>
+       
+    </form>
+</div>
+</body>
+</html>

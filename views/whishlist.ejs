@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                margin-top: 100px;
+                background-color: whitesmoke;
+                margin-left: 100px;
+              
+                
+            }
+           .cart{
+                background-color: white;
+                border-radius: 5px;
+                margin-left: 20px;
+               border: 0.4px solid black;
+               margin-bottom: 3%;
+               max-width: 500px;
+                max-height: 300px;
+                box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+
+            }
+            img{
+                width: 150px;
+                height: 150px;
+                margin: 20px 20px 0px 20px;
+            }
+            .title1{
+                margin-left: 20px;
+                padding-bottom: 20px;
+            }
+            .float1{
+                float:right;
+                font-weight: bold;
+                padding-left: 40px;
+                padding-right: 30px;
+                padding-top: 30px;
+            }
+            .off{
+               color: red;
+               opacity: 0.5;
+              
+            }
+            .b1{
+               padding: 0 2% 2% 2%;
+              margin-left: 70%;
+                
+            }
+            .remove{
+               background-color: lightcyan;
+                width: 130px;
+                height: 40px;
+                font-size: 20px;
+               color: black;
+               border-radius: 10px;
+               box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+
+            }
+            .total{
+               float: right;
+                max-width: 500px;
+                max-height: 500px;
+                background-color: white;
+                padding-left: 100px;
+                padding-right: 100px;
+                text-align: center;
+                border-radius: 10px;
+                padding-bottom: 20px;
+            }
+            .total p{
+                opacity: 0.8;
+                font-weight: 100;
+
+            }
+            .total span{
+                padding-left: 80px;
+            }
+            .btn{
+                background-color: tomato;
+                width: 300px;
+                color: white;
+                font-weight: bold;
+                height: 50px;
+                font-size: 25px;
+                border: 0.5px solid white;
+                border-radius: 10px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <h2>Shopping Bag ( <%=whish.length%> item/items)</h2>
+       
+        <div class="total">
+            <h3>PRICE DETAILS</h3>
+            <p>Total Bag  <span>Rs.<%=totalbag%></span></p>
+            <p>Bag Discount  <span>Rs.<%=bagdiscount%></span></p>
+            <p>Order Total   <span>Rs.<%=totalorder%></span></p>
+            <p>Delivery Charges<span style="color: tomato;">Free Delivery</span></p><br>
+            <h3>Total<span>Rs.<%=totalorder%></span></h3><br>
+           
+                <a href="/placeorder"><button type="submit" class="btn">Place Order</button></a> 
+           
+          
+
+        </div>
+    
+       <% for(var i=0;i<whish.length;i++){ %>
+           <div>
+           <div class="cart">
+               <img src="<%=whish[i].pic%>">
+               <p class="float1">Rs.<%=whish[i].cost%> <br><br>
+                <span style="text-decoration:line-through; opacity: 0.5;"> Rs.<%=whish[i].discount%></span>
+              <span class="off"><%=whish[i].discountper%>% OFF </p></span> 
+               <p class="title1"><b><%=whish[i].title%></b></p>
+              
+                <form class="b1" action="/delete" method="POST">
+                    <input type="hidden" name="del" value="<%=whish[i].id %>">
+                    <input type="hidden" name="del1" value="<%=whish[i].cost%>">
+                    <input type="hidden" name="del2" value="<%=whish[i].discount%>">
+                  
+                <button class="remove" type="submit">Remove</button>
+             </form>
+          
+           </div>   
+        </div>
+      
+          
+      <% } %>
+     
+    </body>
+</html>
